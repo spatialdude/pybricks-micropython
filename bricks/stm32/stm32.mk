@@ -191,6 +191,7 @@ endif
 
 PYBRICKS_PYBRICKS_SRC_C = $(addprefix pybricks/,\
 	ble/pb_module_ble.c \
+	ble/pb_type_broadcast.c \
 	common/pb_type_battery.c \
 	common/pb_type_colorlight_external.c \
 	common/pb_type_colorlight_internal.c \
