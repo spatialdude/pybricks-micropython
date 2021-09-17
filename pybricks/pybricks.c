@@ -9,6 +9,7 @@
 
 #include <pbio/version.h>
 
+#include <pybricks/ble.h>
 #include <pybricks/common.h>
 #include <pybricks/ev3devices.h>
 #include <pybricks/experimental.h>
@@ -51,6 +52,9 @@ STATIC const mp_rom_map_elem_t pybricks_globals_table[] = {
     { MP_ROM_QSTR(MP_QSTR___name__),            MP_ROM_QSTR(MP_QSTR_pybricks) },
     { MP_ROM_QSTR(MP_QSTR___init__),            MP_ROM_PTR(&pb_package_pybricks_init_obj)},
     { MP_ROM_QSTR(MP_QSTR_version),             MP_ROM_PTR(&pybricks_info_obj)},
+    #if PYBRICKS_PY_BLE
+    { MP_ROM_QSTR(MP_QSTR_ble),                 MP_ROM_PTR(&pb_module_ble)},
+    #endif
     #if PYBRICKS_PY_GEOMETRY
     { MP_ROM_QSTR(MP_QSTR_geometry),            MP_ROM_PTR(&pb_module_geometry)},
     #endif

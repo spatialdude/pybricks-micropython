@@ -13,6 +13,8 @@
 #define PYBRICKS_HUB_CITYHUB            (1)
 
 // Pybricks modules
+#define PYBRICKS_PY_BLE                 (1)
+#define PYBRICKS_PY_BLE                 (1)
 #define PYBRICKS_PY_COMMON              (1)
 #define PYBRICKS_PY_COMMON_IMU          (0)
 #define PYBRICKS_PY_COMMON_KEYPAD       (1)
