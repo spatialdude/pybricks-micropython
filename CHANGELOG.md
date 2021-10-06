@@ -4,6 +4,14 @@
 
 ## [Unreleased]
 
+### Added
+- When running a program on the Prime Hub or Inventor Hub, it is saved on the
+  hub's file storage. You can start this program again by pressing the center
+  button.
+- Added basic file read and write functionality to `pybricks.experimental`.
+  This functionality is intended for debugging only and will disappear in
+  a future release.
+
 ### Changed:
 - Dropped `integral_range` argument from `Control.pid()`. This setting was
   ineffective and never used. When set incorrectly, the motor could get stuck
